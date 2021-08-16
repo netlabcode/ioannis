@@ -296,13 +296,13 @@ def emptyNet():
     info( net[ 'r5' ].cmd( 'ip route add 100.0.0.0/24 via 200.5.0.1 dev r5-eth2' ) )
 
     info( net[ 'r0' ].cmd( 'ip route add 100.6.0.0/24 via 200.6.0.2 dev r0-eth3' ) )
-    info( net[ 'r6' ].cmd( 'ip route add 100.0.0.0/24 via 200.6.0.1 dev r16-eth2' ) )
+    info( net[ 'r6' ].cmd( 'ip route add 100.0.0.0/24 via 200.6.0.1 dev r6-eth2' ) )
 
     info( net[ 'r0' ].cmd( 'ip route add 100.7.0.0/24 via 200.7.0.2 dev r0-eth4' ) )
-    info( net[ 'r7' ].cmd( 'ip route add 100.0.0.0/24 via 200.7.0.1 dev r19-eth2' ) )
+    info( net[ 'r7' ].cmd( 'ip route add 100.0.0.0/24 via 200.7.0.1 dev r7-eth2' ) )
 
     info( net[ 'r0' ].cmd( 'ip route add 100.21.0.0/24 via 200.21.0.2 dev r0-eth5' ) )
-    info( net[ 'r21' ].cmd( 'ip route add 100.0.0.0/24 via 200.21.0.1 dev r19-eth2' ) )
+    info( net[ 'r21' ].cmd( 'ip route add 100.0.0.0/24 via 200.21.0.1 dev r21-eth2' ) )
 
     info( net[ 'r0' ].cmd( 'ip route add 100.24.0.0/24 via 200.24.0.2 dev r0-eth6' ) )
     info( net[ 'r24' ].cmd( 'ip route add 100.0.0.0/24 via 200.24.0.1 dev r24-eth2' ) )
