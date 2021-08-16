@@ -159,8 +159,8 @@ def emptyNet():
     net.addLink(s243,s242)
 
     # Link Control Center to Switch
-    net.addLink(ccdb,s777, intfName1='ccdb-eth1', params1={'ip':'100.0.0.11/24'})
-    net.addLink(cctl,s777, intfName1='cctl-eth1', params1={'ip':'100.0.0.12/24'})
+    net.addLink(ccdb,s999, intfName1='ccdb-eth1', params1={'ip':'100.0.0.11/24'})
+    net.addLink(cctl,s999, intfName1='cctl-eth1', params1={'ip':'100.0.0.12/24'})
 
     # Link Substation 5 Merging unit to Switch
     net.addLink(s05m1,s53, intfName1='s05m1-eth1', params1={'ip':'100.5.0.11/24'})
