@@ -445,13 +445,15 @@ def emptyNet():
 
     time.sleep(2)
 
-    """
+    
 
-    info( net[ 's05m1' ].cmd( 'python3.6 as05gdb.py &amp' ) )
-    info( net[ 's06m1' ].cmd( 'python3.6 as06gdb.py &amp' ) )
-    info( net[ 's07m1' ].cmd( 'python3.6 as07gdb.py &amp' ) )
-    info( net[ 's21m1' ].cmd( 'python3.6 as21gdb.py &amp' ) )
-    info( net[ 's24m1' ].cmd( 'python3.6 as24gdb.py &amp' ) )
+    info( net[ 'ccdb' ].cmd( 'python3.6 as05gdb.py &amp' ) )
+    info( net[ 'ccdb' ].cmd( 'python3.6 as06gdb.py &amp' ) )
+    info( net[ 'ccdb' ].cmd( 'python3.6 as07gdb.py &amp' ) )
+    info( net[ 'ccdb' ].cmd( 'python3.6 as21gdb.py &amp' ) )
+    info( net[ 'ccdb' ].cmd( 'python3.6 as24gdb.py &amp' ) )
+
+    """
 
     time.sleep(2)
 
