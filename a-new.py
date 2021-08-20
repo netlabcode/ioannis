@@ -347,7 +347,7 @@ def emptyNet():
     info( net[ 'r24' ].cmd( 'ip route add 100.0.0.0/24 via 200.24.0.1 dev r24-eth2' ) )
 
     info( net[ 'r0' ].cmd( 'ip route add 100.25.0.0/24 via 200.25.0.2 dev r0-eth7' ) )
-    info( net[ 'r25' ].cmd( 'ip route add 100.0.0.0/24 via 200.25.0.1 dev r24-eth2' ) )
+    info( net[ 'r25' ].cmd( 'ip route add 100.0.0.0/24 via 200.25.0.1 dev r25-eth2' ) )
 
     info( net[ 's05m1' ].cmd( 'ip route add 100.0.0.0/24 via 100.5.0.1 dev s05m1-eth1' ) )
     info( net[ 's05m2' ].cmd( 'ip route add 100.0.0.0/24 via 100.5.0.1 dev s05m2-eth1' ) )
