@@ -310,14 +310,14 @@ def emptyNet():
     net.addLink(s24m6,s777, intfName1='s24m6-eth0', params1={'ip':'10.0.24.16/16'})
     net.addLink(s24gw,s777, intfName1='s24gw-eth0', params1={'ip':'10.0.24.23/16'})
 
-    # Link Host Substation 25 to switch to external gateway
-    net.addLink(s25m1, s777, intfName1='s25m1-eth0', params1={'ip': '10.0.25.11/16'})
-    net.addLink(s25m2, s777, intfName1='s25m2-eth0', params1={'ip': '10.0.25.12/16'})
-    net.addLink(s25m3, s777, intfName1='s25m3-eth0', params1={'ip': '10.0.25.13/16'})
-    net.addLink(s25m4, s777, intfName1='s25m4-eth0', params1={'ip': '10.0.25.14/16'})
-    net.addLink(s25m5, s777, intfName1='s25m5-eth0', params1={'ip': '10.0.25.15/16'})
-    net.addLink(s25m6, s777, intfName1='s25m6-eth0', params1={'ip': '10.0.25.16/16'})
-    net.addLink(s25gw, s777, intfName1='s25gw-eth0', params1={'ip': '10.0.25.23/16'})
+    # Link Host Substation 25 to switch to external gateway (change the IP address from 10.0.25.XX to 10.0.30.XX)
+    net.addLink(s25m1, s777, intfName1='s25m1-eth0', params1={'ip': '10.0.30.11/16'})
+    net.addLink(s25m2, s777, intfName1='s25m2-eth0', params1={'ip': '10.0.30.12/16'})
+    net.addLink(s25m3, s777, intfName1='s25m3-eth0', params1={'ip': '10.0.30.13/16'})
+    net.addLink(s25m4, s777, intfName1='s25m4-eth0', params1={'ip': '10.0.30.14/16'})
+    net.addLink(s25m5, s777, intfName1='s25m5-eth0', params1={'ip': '10.0.30.15/16'})
+    net.addLink(s25m6, s777, intfName1='s25m6-eth0', params1={'ip': '10.0.30.16/16'})
+    net.addLink(s25gw, s777, intfName1='s25gw-eth0', params1={'ip': '10.0.30.23/16'})
 
     #Build and start Network ============================================================================
     net.build()
@@ -437,6 +437,13 @@ def emptyNet():
     info(net['s25m4'].cmd('ip route add 100.0.0.0/24 via 100.25.0.1 dev s25m4-eth1'))
     info(net['s25m5'].cmd('ip route add 100.0.0.0/24 via 100.25.0.1 dev s25m5-eth1'))
     info(net['s25m6'].cmd('ip route add 100.0.0.0/24 via 100.25.0.1 dev s25m6-eth1'))
+
+    info(net['s25m1'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m1-eth1'))
+    info(net['s25m2'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m2-eth1'))
+    info(net['s25m3'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m3-eth1'))
+    info(net['s25m4'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m4-eth1'))
+    info(net['s25m5'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m5-eth1'))
+    info(net['s25m6'].cmd('ip route add 200.0.0.0/8 via 100.25.0.1 dev s25m6-eth1'))
 
     info( net[ 'ccdb' ].cmd( 'ip route add 100.5.0.0/24 via 100.0.0.1 dev ccdb-eth1' ) )
     info( net[ 'ccdb' ].cmd( 'ip route add 100.6.0.0/24 via 100.0.0.1 dev ccdb-eth1' ) )
