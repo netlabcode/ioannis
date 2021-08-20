@@ -310,6 +310,7 @@ def emptyNet():
     net.addLink(s24m6,s777, intfName1='s24m6-eth0', params1={'ip':'10.0.24.16/16'})
     net.addLink(s24gw,s777, intfName1='s24gw-eth0', params1={'ip':'10.0.24.23/16'})
 
+    """
     # Link Host Substation 24 to switch to gateway of substation 7
     net.addLink(s8m1,s777, intfName1='s8m1-eth0', params1={'ip':'10.0.25.11/16'})
     net.addLink(s8m2,s777, intfName1='s8m2-eth0', params1={'ip':'10.0.25.12/16'})
@@ -318,6 +319,8 @@ def emptyNet():
     net.addLink(s8m5,s777, intfName1='s8m5-eth0', params1={'ip':'10.0.25.15/16'})
     net.addLink(s8m6,s777, intfName1='s8m6-eth0', params1={'ip':'10.0.25.16/16'})
     net.addLink(s8gw,s777, intfName1='s8gw-eth0', params1={'ip':'10.0.25.23/16'})
+    """
+
 
     #Build and start Network ============================================================================
     net.build()
