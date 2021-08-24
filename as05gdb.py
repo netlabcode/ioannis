@@ -47,7 +47,7 @@ def serverOne():
 
 			cursor.execute(" INSERT INTO s05m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res, tr_cb_ctrl, tr_cb_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("1")
+			print("1-5")
 
 def serverTwo():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -83,7 +83,7 @@ def serverTwo():
 
 			cursor.execute(" INSERT INTO s05m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res, g_cb_ctrl, g_cb_res, f_res, ld_res, g_p_ctrl, g_p_res, g_q_res, g_v_ctrl, g_v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("2")
+			print("2-5")
 
 
 def serverThree():
@@ -118,7 +118,7 @@ def serverThree():
 
 			cursor.execute(" INSERT INTO s05m3(dtime, cb_ctrl, cb_res, f_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap, tap_ctrl, tap_mode, tap_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("3")
+			print("3-5")
 
 
 # Create two threads as follows
