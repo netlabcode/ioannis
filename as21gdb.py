@@ -45,7 +45,7 @@ def serverOne():
 
 			cursor.execute(" INSERT INTO s21m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("1")
+			print("1-21")
 
 def serverTwo():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -72,7 +72,7 @@ def serverTwo():
 
 			cursor.execute(" INSERT INTO s21m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("2")
+			print("2-21")
 
 
 def serverThree():
@@ -101,7 +101,7 @@ def serverThree():
 
 			cursor.execute(" INSERT INTO s21m3(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("3")
+			print("3-21")
 
 
 

@@ -48,7 +48,7 @@ def serverOne():
 
 			cursor.execute(" INSERT INTO s24m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("1")
+			print("1-24")
 
 def serverTwo():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -75,7 +75,7 @@ def serverTwo():
 
 			cursor.execute(" INSERT INTO s24m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("2")
+			print("2-24")
 
 
 def serverThree():
@@ -103,7 +103,7 @@ def serverThree():
 
 			cursor.execute(" INSERT INTO s24m3(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("3")
+			print("3-24")
 
 def serverFour():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -130,7 +130,7 @@ def serverFour():
 
 			cursor.execute(" INSERT INTO s24m4(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("4")
+			print("4-24")
 
 def serverFive():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -157,7 +157,7 @@ def serverFive():
 
 			cursor.execute(" INSERT INTO s24m5(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("5")
+			print("5-24")
 
 def serverSix():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -185,7 +185,7 @@ def serverSix():
 
 			cursor.execute(" INSERT INTO s24m6(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print("6")
+			print("6-24")
 
 
 # Create two threads as follows
