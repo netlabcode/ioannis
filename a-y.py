@@ -443,9 +443,11 @@ def emptyNet():
 
     time.sleep(2)
 
-    """
+    
 
     info( net[ 'ccdb' ].cmd( 'python3.6 as05gdb.py &amp' ) )
+
+    """
     info( net[ 'ccdb' ].cmd( 'python3.6 as06gdb.py &amp' ) )
     info( net[ 'ccdb' ].cmd( 'python3.6 as07gdb.py &amp' ) )
     info( net[ 'ccdb' ].cmd( 'python3.6 as21gdb.py &amp' ) )
