@@ -53,7 +53,7 @@ def serverOne():
                 " INSERT INTO s07m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(1)
+            print("1-7")
 
 
 def serverTwo():
@@ -90,7 +90,7 @@ def serverTwo():
                 " INSERT INTO s07m2(dtime, cb_ctrl, cb_res, f_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap, tap_ctrl, tap_mode, tap_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(2)
+            print("2-7")
 
 
 def serverThree():
@@ -127,7 +127,7 @@ def serverThree():
                 " INSERT INTO s07m3(dtime, cb_ctrl, cb_res, f_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap, tap_ctrl, tap_mode, tap_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(3)
+            print("3-7")
 
 
 def serverFour():
@@ -163,7 +163,7 @@ def serverFour():
                 " INSERT INTO s07m4(dtime, cb_ctrl, cb_res, hv_p_res, hv_q_res, ld_res, lv_p_res, lv_q_res, tap_ctrl, tap_mode, tap_res, a_cb_ctrl, a_cb_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(4)
+            print("4-7")
 
 
 def serverFive():
@@ -187,7 +187,7 @@ def serverFive():
 
             cursor.execute(" INSERT INTO s07m5(dtime, cb_ctrl, cb_res) VALUES (%s,%s,%s)", inserted_values)
 
-            print(5)
+            print("5-7")
 
 
 def serverSix():
@@ -218,7 +218,7 @@ def serverSix():
                 " INSERT INTO s07m6(dtime, cb_ctrl, cb_res, f_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(6)
+            print("6-7")
 
 
 def serverSeven():
@@ -246,7 +246,7 @@ def serverSeven():
             cursor.execute(" INSERT INTO s07m7(dtime, cb_ctrl, cb_res, f_res, tap, v_res) VALUES (%s,%s,%s,%s,%s,%s)",
                            inserted_values)
 
-            print(7)
+            print("7-7")
 
 
 def serverEight():
@@ -279,7 +279,7 @@ def serverEight():
                 " INSERT INTO s07m8(dtime, cb_ctrl, cb_res, f_res, ld_res, p_ctrl, p_res, q_res, v_ctrl, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(8)
+            print("8-7")
 
 
 def serverNine():
@@ -303,7 +303,7 @@ def serverNine():
 
             cursor.execute(" INSERT INTO s07m9(dtime, cb_ctrl, cb_res) VALUES (%s,%s,%s)", inserted_values)
 
-            print(9)
+            print("9-7")
 
 
 def serverTen():
@@ -336,7 +336,7 @@ def serverTen():
                 " INSERT INTO s07m10(dtime, cb_ctrl, cb_res, f_res, ld_res, p_ctrl, p_res, q_res, v_ctrl, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 inserted_values)
 
-            print(10)
+            print("10-7")
 
 
 # Create two threads as follows
