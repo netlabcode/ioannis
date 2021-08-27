@@ -460,8 +460,9 @@ def emptyNet():
     info( net[ 'ccdb' ].cmd( 'python3.6 as06gdb.py &amp' ) )
     info( net[ 'ccdb' ].cmd( 'python3.6 as07gdb.py &amp' ) )
     info( net[ 'ccdb' ].cmd( 'python3.6 as21gdb.py &amp' ) )
-    info( net[ 'ccdb' ].cmd( 'python3.6 as24gdb.py &amp' ) )
     """
+    info( net[ 'ccdb' ].cmd( 'python3.6 as24gdb.py &amp' ) )
+    
     
     info( net[ 'ccdb' ].cmd( 'python3.6 as24gdb.py &amp' ) )
 
